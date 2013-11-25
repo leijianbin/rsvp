@@ -2,7 +2,7 @@
 //  course.c
 //  rsvp
 //
-//  Created by Jianbin Lei on 11/21/13.
+//  Created by *** on 11/21/13.
 //  Copyright (c) 2013 Alberto. All rights reserved.
 //
 #include <stdio.h>
@@ -49,7 +49,7 @@ void read_courses(FILE *fp)
                 }
                 p = strtok(NULL, "\t");
             }
-            printf("%d %s %s \n",CRNs[size],subject[size],courseNum[size]);
+            //printf("%d %s %s \n",CRNs[size],subject[size],courseNum[size]);
             size++;
             
             if(size == (count - 1))

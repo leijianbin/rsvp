@@ -156,9 +156,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "read_courses()"
-            landmarkType = "7">
+            endingLineNumber = "67">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -188,9 +186,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "find_CRN()"
-            landmarkType = "7">
+            endingLineNumber = "87">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
