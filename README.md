@@ -39,41 +39,41 @@ Here are the specifications:
 
         5.4. find_subject() will query the user for a subject, and then display the courses of that subject if found.
 
-        6. vector.c
+6. vector.c
 
-        6.1. This file will have three functions.
+6.1. This file will have three functions.
 
-        6.2. initialize() will dynamically allocate each of the three arrays to size 100.
+6.2. initialize() will dynamically allocate each of the three arrays to size 100.
 
         6.2.1. CRNs may be stored as ints.
         6.2.2. Each element of the subjects array will point to a dynamically allocated char[4] array.
         6.2.3. Each element of the courses array will point to a dynamically allocated char[6] array.
         6.2.4. Since you will be changing to where the pointers point, this will involve triple pointers for subjects and courses!
 
-        6.3. resize() will create three arrays, each twice the size of the corresponding current size, and then copies the old array's elements to the beginning of the new arrays. After copying the old arrays, aspects of them should be freed.
+6.3. resize() will create three arrays, each twice the size of the corresponding current size, and then copies the old array's elements to the beginning of the new arrays. After copying the old arrays, aspects of them should be freed.
 
         6.3.1. This will involve triple pointers too!
 
-        6.4. deallocate() will free all dynamically allocated arrays.
+6.4. deallocate() will free all dynamically allocated arrays.
 
         6.4.1. There is no need to pass the address of the double pointers, nor the address of size, for this function.
 
-        7. Makefile
+7. Makefile
 
-        7.1. It must create an object file for each source code file.
-        7.2. You must use the –Wall and –g options on all lines invoking gcc. 
-        7.3. It must have a clean: option that uses rm –f to explicitly remove the files created by the Makefile, i.e., vector.o, rsvp.o, course.o, and rsvp.out. 
+7.1. It must create an object file for each source code file.
+7.2. You must use the –Wall and –g options on all lines invoking gcc. 
+7.3. It must have a clean: option that uses rm –f to explicitly remove the files created by the Makefile, i.e., vector.o, rsvp.o, course.o, and rsvp.out. 
 
-        8. Suggestions and hints
+8. Suggestions and hints
 
-        8.1. You should make use of top down design, and write stubs.
+8.1. You should make use of top down design, and write stubs.
             
-            8.2. Write only one function at a time then compile and run it until it is error free. Now that you know gdb, you can more easily check variable values at the end of a function.
+8.2. Write only one function at a time then compile and run it until it is error free. Now that you know gdb, you can more easily check variable values at the end of a function.
 
-            8.3. Remember that the [] operator has higher precedence than the * operator so when working with triple pointers you will need to use parentheses to ensure that the dereferencing occurs before the indexing, e.g., (*subjects)[i].
+8.3. Remember that the [] operator has higher precedence than the * operator so when working with triple pointers you will need to use parentheses to ensure that the dereferencing occurs before the indexing, e.g., (*subjects)[i].
 
 
-            Here is part of summersession_I.html:
+Here is part of summersession_I.html:
 
             African American & African Std (AAS)
 
@@ -93,9 +93,9 @@ Here are the specifications:
             52047 ^ ARE 100A COM A01 Intermed Microeconomics 4.0 The Staff MTW 1210-0150P HARING 1227 100
             R 1210-0150P HARING 1227
 
-            Here are some examples of what the output should look like:
+Here are some examples of what the output should look like:
 
-            [chegg@rsvp]$ rsvp.out summersession_I.html
+            [ray@rsvp]$ rsvp.out summersession_I.html
 
             RSVP Menu
             0. Done.
@@ -137,5 +137,4 @@ Here are the specifications:
             1. Find by CRN.
             2. Find by subject.
             Your choice (0 - 2): 0
-            [chegg@rsvp]$
 
